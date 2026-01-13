@@ -1,0 +1,14 @@
+name: First Workflow
+
+on:
+  workflow_dispatch: # permet de déclencher manuellement le workflow
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest # environnement Linux
+
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - Bye"
